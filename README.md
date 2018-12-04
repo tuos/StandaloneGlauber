@@ -1,4 +1,4 @@
-# StandaloneGlauber
+# Standalone Glauber Model from arXiv:0805.4411
 
 ## Setting up ROOT at ACCRE:
 
