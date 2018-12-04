@@ -1,6 +1,6 @@
 # StandaloneGlauber
 
-Setting up ROOT at ACCRE:
+## Setting up ROOT at ACCRE:
 
 [tuos@gw345 glauber]$ cmsrel CMSSW_10_3_0
 
@@ -13,7 +13,7 @@ Setting up ROOT at ACCRE:
 root [0] .q
 
 
-Running the code:
+## Running the code:
 
 [tuos@gw343 glauber_v1p5]$ root -l
 
