@@ -4,7 +4,7 @@
 
 ```
 We will use ROOT in CMSSW at ACCRE.
-Any directory at ACCRE, do the following (find available release by doing 'scram list'):
+In any directory at ACCRE, do the following (find available release by doing 'scram list'):
 [tuos@gw345 glauber]$ cmsrel CMSSW_10_3_0
 [tuos@gw345 glauber]$ cd CMSSW_10_3_0/src/
 [tuos@gw345 src]$ cmsenv
@@ -30,4 +30,13 @@ Event # 9950 x-sect = 7.69905 +- 0.0771798 b
 Done!
 root [2] .q
 ```
+
+### Changing collision energy
+
+```
+Find the input value of nucleon-nucleon inelastic cross section (67.6 mb in the above example) in table 2 of the paper:
+ 
+https://arxiv.org/abs/1710.07098
+```
+
 
