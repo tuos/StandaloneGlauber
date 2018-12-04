@@ -11,6 +11,11 @@ Any directory at ACCRE, do the following (find available release by doing 'scram
 [tuos@gw345 src]$ root -l
 root [0] .q
 ```
+## Getting the code
+
+```
+git clone https://github.com/tuos/StandaloneGlauber.git 
+```
 
 ## Running the code
 
