@@ -1,0 +1,33 @@
+
+[tuos@vmps12 tools]$ root -l
+Error in <TROOT::LoadMacro>: macro runglauber_v3.1.C not found in path .:/cvmfs/cms.cern.ch/slc6_amd64_gcc700/lcg/root/6.12.07-ogkkac4/macros
+root [0] .L runglauber.C+
+root [1] runAndSaveN(10000, "Pb","Pb", 70, -1, 0.4, -1,-1,"glauber_pbpb_10k.root")
+runAndSaveNtuple
+runAndSaveNucleons
+root [1] runAndSaveNucleons(10000, "Pb","Pb", 70, -1, 0.4, 0,"glauber_nucleons_pbpb_10k.root")
+Setting up nucleus Pb
+Setting up nucleus Pb
+99% done
+Done!
+root [2] .L runCGM.C+
+root [3] runCGM(10000, "Pb", "Pb", 70, 0.4, 3, 21.1, 1, "partonic_glauber_pbpb_10k.root",0.0,20.0,"glauber_nucleons_pbpb_10k.root")
+runCQM with
+n=10000, Pb-Pb, sNN=70.00mb, mind=0.40, nc=3, sigcc=21.10mb, type=1
+Setting up nucleus Pb
+Setting up nucleus Pb
+ReadNextEvent: Setting up file glauber_nucleons_pbpb_10k.root
+Indices: 208 208 3 3
+d2: 0.671634
+ReadNextEvent resetting to first event
+Event # 10000                 
+n=10000, Pb-Pb, sNN=70.00mb, mind=0.40, nc=3, sigcc=21.10mb, type=1
+root [4] .q
+===
+In PbPb, Nccoll/Ncoll:
+root [2] 1063./391.7
+(double) 2.7138116
+===
+
+
+
