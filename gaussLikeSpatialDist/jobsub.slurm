@@ -16,7 +16,7 @@ cd /scratch/tuos/glauber/CMSSW_10_3_0/src/v3p2/standalone/StandaloneGlauber/slur
 
 root -l -b <<EOF
 .L runglauber_v1.5.C+
-runAndSaveNtuple(100000,"Pb","Pb",67.6,0.4,"glauber_PbPb_default_v1p5_100k.root")
+runAndSaveNtuple(100000,"Pb","Pb",61.8,0.4,"glauber_PbPb_default_v1p5_100k.root")
 EOF
 
 
