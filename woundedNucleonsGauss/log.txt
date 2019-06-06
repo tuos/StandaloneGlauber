@@ -1,0 +1,14 @@
+
+[tuos@gw345 StandaloneGlauber]$ root -l
+root [0] .L runglauber_v1.5.C+
+Info in <TUnixSystem::ACLiC>: creating shared library /gpfs23/scratch/tuos/glauber/CMSSW_10_3_0/src/v3p2/standalone/StandaloneGlauber/./runglauber_v1.5_C.so
+root [1] runAndSaveNtuple(100,"Pb","Pb",67.6,0.4,"glauber_PbPb_default_v1p5_10k.root")
+Setting up nucleus Pb
+Setting up nucleus Pb
+Event # 50 x-sect = 7.7215 +- 1.08123 b        
+Done!
+root [2] .q
+
+
+sbatch -J woundedjob -o out_woundedjob.out jobsub.slurm
+
