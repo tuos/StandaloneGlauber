@@ -43,7 +43,7 @@ Processing readFileAndDraw.C...
 Info in <TCanvas::Print>: file fig_npart_b.png has been created
 root [1]
 ```
-[Npart vs. B](https://github.com/tuos/StandaloneGlauber/blob/master/macros/fig_npart_b.png)
+![Npart vs. B](https://github.com/tuos/StandaloneGlauber/blob/master/macros/fig_npart_b.png)
 ```
 Read the tree inside the file event by event and fill histograms:
 [tuos@gw345 macros]$ root -l analyzeEventTree.C 
