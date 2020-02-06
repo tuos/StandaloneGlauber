@@ -31,6 +31,35 @@ Done!
 root [2] .q
 ```
 
+### Analyzing the output
+```
+cd macros/
+Read the output ROOT file and draw figures:
+[tuos@gw345 macros]$ root -l readFileAndDraw.C 
+root [0] 
+Processing readFileAndDraw.C...
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+root [1]
+
+Read the tree inside the file event by event and fill histograms:
+[tuos@gw345 macros]$ root -l analyzeEventTree.C 
+root [0] 
+Processing analyzeEventTree.C...
+Have run 0 out of 10000 events; 
+Have run 1000 out of 10000 events; 
+Have run 2000 out of 10000 events; 
+Have run 3000 out of 10000 events; 
+Have run 4000 out of 10000 events; 
+Have run 5000 out of 10000 events; 
+Have run 6000 out of 10000 events; 
+Have run 7000 out of 10000 events; 
+Have run 8000 out of 10000 events; 
+Have run 9000 out of 10000 events; 
+<Npart> = 113.804
+# of entries = 10000
+root [1]
+```
+
 ### Changing collision energy
 
 ```
