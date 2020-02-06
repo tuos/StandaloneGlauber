@@ -38,7 +38,9 @@ Read the output ROOT file and draw figures:
 [tuos@gw345 macros]$ root -l readFileAndDraw.C 
 root [0] 
 Processing readFileAndDraw.C...
-Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+<Npart> = 113.804
+# of entries = 10000
+Info in <TCanvas::Print>: file fig_npart_b.png has been created
 root [1]
 
 Read the tree inside the file event by event and fill histograms:
