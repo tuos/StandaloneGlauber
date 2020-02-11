@@ -66,9 +66,13 @@ void centralityDetermination(){
     } 
     cout<<endl<<endl;
 
+    hCentrality->SetMinimum(0);
+    hCentrality->Draw();
+
     //cout<<"<Npart> = "<<hNpart->GetMean()<<endl;
 
     //cout<<"# of entries = "<<hNpartB->GetEntries()<<endl;
+   
 
 }
 
