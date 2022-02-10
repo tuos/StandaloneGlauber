@@ -19,6 +19,6 @@ void readFileAndDraw(){
 
     c1->SaveAs("fig_npart_b.png");
 
-    glauberFile->Close();
+    //glauberFile->Close();
 }
 
