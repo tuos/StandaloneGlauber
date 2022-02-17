@@ -17,7 +17,7 @@ void centralityDetermination(){
     tree->SetBranchAddress("Ncoll", &Ncoll);
     tree->SetBranchAddress("B", &B);
 
-    const int nBins = 5;
+    const int nBins = 10;
     double binBoundaries[nBins+1];
     vector<float> impactParameters;
     
@@ -35,7 +35,7 @@ void centralityDetermination(){
     sort(impactParameters.begin(),impactParameters.end());
 
     int size = impactParameters.size(); 
-    binBoundaries[nBins] = impactParameters[size-1];
+    binBoundaries[nBins] = impactParameters[size-1]+0.1;
 
     cout <<endl << "Impact parameter boundaries for each centrality range:"<<endl;
     for(int i = 0; i < nBins; i++) {
@@ -56,7 +56,7 @@ void centralityDetermination(){
       tree->GetEntry(i);
 
       for(int j = 0; j < nBins; j++){
-        if(B>binBoundaries[j] && B<=binBoundaries[j+1])
+        if(B>=binBoundaries[j] && B<binBoundaries[j+1])
           hCentrality->Fill(j*100/nBins);
       }
     }

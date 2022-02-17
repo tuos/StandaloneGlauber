@@ -31,8 +31,8 @@ void analyzeEventTree(){
 
     cout<<"# of entries = "<<hNpartB->GetEntries()<<endl;
 
-    //hB->Draw();
-    hNpartB->Draw("colz");
+    hB->Draw();
+    //hNpartB->Draw("colz");
 
 }
 
